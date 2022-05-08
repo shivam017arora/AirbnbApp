@@ -1,38 +1,102 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+.navbar {
+  box-sizing: border-box;
+  height: 100px;
+  display: flex;
+  padding: 20px 36px;
+  margin: 10px 0px;
+  margin-bottom: 20px;
+  box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.1);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.airbnb_red {
+  color: rgb(252, 92, 99)
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navbar img {
+  object-fit: contain;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.banner img {
+  height: 50vh;
+  object-fit: contain;
+  max-width: 700px;
+  align-self: center;
+}
+
+.banner {
+  height: 100%;
+  margin: 0;
   display: flex;
   flex-direction: column;
+  font-family: Poppins, Helvetica, sans-serif;
+}
+
+.banner_text {
+  padding: 10px 10px;
+  margin: 10px 50px;
+  text-align: left;
+}
+
+.banner_text h1 {
+  font-size: 5rem;
+  font-family: Poppins, Helvetica, sans-serif;
+  font-weight: 400;
+  margin-bottom: -30px;
+}
+
+.banner_text h4 {
+  font-size: 2rem;
+  font-size: Poppings, Helvetica, sans-serif;
+  font-weight: 400;
+  color: grey;
+  line-height: .95;
+}
+
+.cards {
+  display: flex;
+  overflow-x: auto;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px 10px;
+  margin: 30px 50px;
+  position: relative;
+}
+
+.card img {
+  object-fit: contain;
+  height: 300px;
+}
+
+.card_rating {
+  font: Poppins;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-bottom: -40px;
 }
 
-.App-link {
-  color: #61dafb;
+.card_rating p {
+  color: grey;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card p {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font: Poppins;
+}
+
+.card_badge{
+  position: absolute;
+    top: 30px;
+    left: 20px;
+    background-color: white;
+    padding: 5px 7px;
+    border-radius: 8px;
+    font-weight: bold;
 }
